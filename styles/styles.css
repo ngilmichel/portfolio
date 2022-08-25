@@ -18,21 +18,29 @@ body {
     text-align: center;
 }
 
-/* @media screen and (min-width: 800px) {} */
+.cover-card {
+    font-weight: 800;
+}
 
 .name {
     margin-bottom: 5px;
 }
 
-.cover-card {
-    font-weight: 800;
+.social img:hover {
+    opacity: 0.85;
 }
 
 .page-content {
     text-align: left;
-    padding: 0% 25%;
+    padding: 0% 10%;
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+@media screen and (min-width: 900px) {
+    .page-content {
+        padding: 0% 25%;
+    }
 }
 
 .page-content h2 {
@@ -55,14 +63,20 @@ body {
 }
 
 .foot-wrapper {
-    gap: 100px;
-    display: flex;
-    align-items: center;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform:translate(-50%,-50%);
     color: lime;
+}
+
+@media screen and (min-width: 900px) {
+    .foot-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        left: 50%;
+    }
 }
 
 .footer-heading {
