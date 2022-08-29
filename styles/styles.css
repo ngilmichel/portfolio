@@ -64,12 +64,13 @@ body {
     padding: 0% 10%;
     background-color: #121213;
     color: rgb(232, 223, 223);
-    margin: 60px 0px 100px 0px;
+    margin: 40px 0px 100px 0px;
 }
 
 @media screen and (min-width: 900px) {
     .page-content {
         padding: 0% 23%;
+        margin: 60px 0px 100px 0px;
     }
 }
 
