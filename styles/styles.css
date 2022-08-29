@@ -1,17 +1,24 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Syne', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121213;
 }
 
 .landing-cover {
     display: grid;
     background-size: cover;
-    min-height: 275px;
-    color: black;
-    font-size: 35px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 50px;
+    min-height: 250px;
+    color: rgb(232, 223, 223);
+    font-size: 27px;
+    background-color: #121213;
+}
+
+@media screen and (min-width: 900px) {
+    .landing-cover {
+        font-size: 40px;
+        min-height: 350px;
+    }
 }
 
 .wrapper {
@@ -24,18 +31,40 @@ body {
 }
 
 .name {
-    margin-bottom: 5px;
+    margin-bottom: -20px;
 }
 
-.social img:hover {
-    opacity: 0.85;
+.role {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+@media screen and (min-width: 900px) {
+    .role {
+        font-size: 32px;
+    }
+}
+
+.social {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .social {
+        font-size: 16px;
+    }
+}
+
+.social a {
+    margin: 0 5px;
 }
 
 .page-content {
     text-align: justify;
     padding: 0% 10%;
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: #121213;
+    color: rgb(232, 223, 223);
+    margin: 60px 0px 100px 0px;
 }
 
 @media screen and (min-width: 900px) {
@@ -45,44 +74,83 @@ body {
 }
 
 .page-content h2 {
-    font-size: 25px;
+    font-weight: 800;
+    font-size: 20px;
     margin-top: 40px;
+    display: inline-block;
+    color: #121213;
+    background: rgb(232, 223, 223);
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 900px) {
+    .page-content h2 {
+        font-size: 25px;
+    }
 }
 
 .page-content p {
-    font-weight: 500;
-    font-size: 19px;
+    font-weight: 600;
+    font-size: 17px;
     margin-left: 10px;
 }
 
-.page-content a {
-    color: rgb(98, 98, 98);
+@media screen and (min-width: 900px) {
+    .page-content p {
+        font-size: 19px;
+    }
+}
+
+.hover-centered a, a:visited, a:active {
+    color: rgb(254, 118, 73);
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+}
+
+.hover-centered a:hover {
+    color: rgb(253, 73, 12);
+}
+
+.hover-centered a:after {
+    content: "";
+    transition: 0.5s all ease;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: rgb(253, 73, 12);
+    left: 50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+}
+
+.hover-centered a:hover:after {
+    width: 100%;
 }
 
 .site-footer {
-    margin-top: 100px;
     padding: 25px;
     min-height: 125px;
-    background: black;
-    color: white;
+    background: #121213;
+    color: rgb(232, 223, 223);
     position: relative;
 }
 
 .foot-wrapper {
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
     transform:translate(-50%,-50%);
-    color: lime;
 }
 
-@media screen and (min-width: 900px) {
-    .foot-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 100px;
-        left: 50%;
-    }
+.foot-wrapper:before {
+    content : "";
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    width: 50%;
+    border-bottom: 2px solid rgb(232, 223, 223);
 }
 
 .footer-heading {
@@ -92,8 +160,4 @@ body {
 .footer-heading a {
     text-decoration: inherit;
     color: inherit;
-}
-
-.footer-text {
-    font-size: 12px;
 }
