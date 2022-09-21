@@ -5,6 +5,10 @@ body {
     background-color: #121213;
 }
 
+h1:hover {
+    color: white;
+}
+
 .landing-cover {
     display: grid;
     background-size: cover;
@@ -31,11 +35,14 @@ body {
 }
 
 .name {
-    margin-bottom: -20px;
+    display: inline-block;
+    margin-bottom: -10px;
 }
 
 .role {
-    margin-bottom: 5px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-size: 17px;
 }
 
@@ -85,6 +92,10 @@ body {
     margin-bottom: 0px;
 }
 
+.page-content h2:hover {
+    background: white;
+}
+
 @media screen and (min-width: 900px) {
     .page-content h2 {
         font-size: 25px;
@@ -95,6 +106,10 @@ body {
     font-weight: 600;
     font-size: 17px;
     margin-left: 10px;
+}
+
+.page-content p:hover {
+    color: white;
 }
 
 @media screen and (min-width: 900px) {
@@ -161,4 +176,8 @@ body {
 .footer-heading a {
     text-decoration: inherit;
     color: inherit;
+}
+
+.footer-heading a:hover {
+    color: white;
 }
