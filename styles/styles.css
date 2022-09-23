@@ -1,3 +1,11 @@
+* {
+    cursor: url('../images/cursor/Normal.cur'), default;
+}
+
+a {
+    cursor: url('../images/cursor/Select.cur'), pointer;
+}
+
 body {
     font-family: 'Syne', sans-serif;
     margin: 0;
@@ -5,8 +13,8 @@ body {
     background-color: #121213;
 }
 
-h1:hover {
-    color: white;
+h1 {
+    text-shadow: 0 0 5px rgb(232, 223, 223);
 }
 
 .landing-cover {
@@ -92,10 +100,6 @@ h1:hover {
     margin-bottom: 0px;
 }
 
-.page-content h2:hover {
-    background: white;
-}
-
 @media screen and (min-width: 900px) {
     .page-content h2 {
         font-size: 25px;
@@ -106,10 +110,6 @@ h1:hover {
     font-weight: 600;
     font-size: 17px;
     margin-left: 10px;
-}
-
-.page-content p:hover {
-    color: white;
 }
 
 @media screen and (min-width: 900px) {
@@ -179,5 +179,5 @@ h1:hover {
 }
 
 .footer-heading a:hover {
-    color: white;
+    text-shadow: 0 0 5px rgb(232, 223, 223);
 }
