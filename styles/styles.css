@@ -1,5 +1,12 @@
+:root {
+    --bone: rgb(249, 246, 238);
+    --metalgrey: #1D252C;
+  }
+
 * {
     cursor: url('../images/cursor/Normal.cur'), default;
+    color: var(--bone);
+    background-color: var(--metalgrey);
 }
 
 a {
@@ -10,20 +17,18 @@ body {
     font-family: 'Syne', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121213;
 }
 
 h1 {
-    text-shadow: 0 0 5px rgb(232, 223, 223);
+    text-shadow: 0 0 5px rgb(190, 190, 190);
 }
 
 .landing-cover {
     display: grid;
     background-size: cover;
     min-height: 250px;
-    color: rgb(232, 223, 223);
+    color: var(--bone);
     font-size: 27px;
-    background-color: #121213;
 }
 
 @media screen and (min-width: 900px) {
@@ -77,7 +82,6 @@ h1 {
 .page-content {
     text-align: justify;
     padding: 0% 10%;
-    background-color: #121213;
     color: rgb(232, 223, 223);
     margin: 40px 0px 100px 0px;
 }
@@ -94,8 +98,8 @@ h1 {
     font-size: 20px;
     margin-top: 40px;
     display: inline-block;
-    color: #121213;
-    background: rgb(232, 223, 223);
+    color: var(--metalgrey);
+    background-color: var(--bone);
     padding: 10px 20px;
     margin-bottom: 0px;
 }
@@ -148,8 +152,7 @@ h1 {
 .site-footer {
     padding: 25px;
     min-height: 125px;
-    background: #121213;
-    color: rgb(232, 223, 223);
+    color: var(--bone);
     position: relative;
 }
 
@@ -166,7 +169,7 @@ h1 {
     left: 50px;
     bottom: 100px;
     width: 50%;
-    border-bottom: 2px solid rgb(232, 223, 223);
+    border-bottom: 2px solid var(--bone);
 }
 
 .footer-heading {
@@ -179,5 +182,5 @@ h1 {
 }
 
 .footer-heading a:hover {
-    text-shadow: 0 0 5px rgb(232, 223, 223);
+    text-shadow: 0 0 5px rgb(190, 190, 190);
 }
